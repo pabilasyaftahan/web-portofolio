@@ -248,78 +248,62 @@
 
                 <div class="cv-access-form">
                     <h3>Request CV Access</h3>
-                    <form id="cvRequestForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="company" name="company" placeholder="Company Name">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message"
-                                placeholder="Why would you like to view my CV? (Optional)"></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <span class="material-symbols-outlined">description</span>
-                            Request CV Access
-                        </button>
-                    </form>
+                    <a href="https://forms.gle/nFZaT9sbK2ve1Xb7A" target="_blank" class="submit-btn">
+                        <span class="material-symbols-outlined">description</span>
+                        Request CV Access
+                    </a>
                 </div>
 
-                <div class="cv-access-form">
-  <h3>Request CV Access</h3>
-  <a href="https://forms.gle/nFZaT9sbK2ve1Xb7A" target="_blank" class="submit-btn">
-    <span class="material-symbols-outlined">description</span>
-    Request CV Access
-  </a>
-</div>
+                <style>
+                    /* Tombol CV */
+                    .submit-btn {
+                        display: inline-flex;
+                        /* Membuat tombol fleksibel */
+                        align-items: center;
+                        /* Vertikal center untuk icon dan teks */
+                        justify-content: center;
+                        /* Horizontal center */
+                        text-align: center;
+                        /* Teks center */
+                        padding: 12px 24px;
+                        background-color: #f7c6c7;
+                        /* Warna pastel */
+                        color: #333;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-family: 'Poppins', sans-serif;
+                        gap: 8px;
+                        /* Jarak antara icon dan teks */
+                        transition: background-color 0.3s, transform 0.2s;
+                    }
 
-<style>
-/* Tombol CV */
-.submit-btn {
-    display: inline-flex;           /* Membuat tombol fleksibel */
-    align-items: center;            /* Vertikal center untuk icon dan teks */
-    justify-content: center;        /* Horizontal center */
-    text-align: center;             /* Teks center */
-    padding: 12px 24px;
-    background-color: #f7c6c7;     /* Warna pastel */
-    color: #333;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    gap: 8px;                       /* Jarak antara icon dan teks */
-    transition: background-color 0.3s, transform 0.2s;
-}
+                    /* Icon material symbols */
+                    .submit-btn span.material-symbols-outlined {
+                        vertical-align: middle;
+                    }
 
-/* Icon material symbols */
-.submit-btn span.material-symbols-outlined {
-    vertical-align: middle;
-}
+                    /* Hover effect */
+                    .submit-btn:hover {
+                        background-color: #f3a6a7;
+                        transform: translateY(-2px);
+                    }
 
-/* Hover effect */
-.submit-btn:hover {
-    background-color: #f3a6a7;
-    transform: translateY(-2px);
-}
+                    /* Center container */
+                    .cv-access-form {
+                        text-align: center;
+                        /* Center semua isi container */
+                        margin: 30px 0;
+                    }
 
-/* Center container */
-.cv-access-form {
-    text-align: center; /* Center semua isi container */
-    margin: 30px 0;
-}
+                    .cv-access-form h3 {
+                        font-family: 'Poppins', sans-serif;
+                        margin-bottom: 16px;
+                        color: #333;
+                    }
+                </style>
 
-.cv-access-form h3 {
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 16px;
-    color: #333;
-}
-</style>
-    
-                
+
             </div>
         </section>
     </main>
@@ -330,6 +314,5 @@
 
     <script src="script.js"></script>
 </body>
-
 
 </html>
