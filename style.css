@@ -121,15 +121,17 @@ section {
 }
 
 .project-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+    text-decoration: none;   /* Hilangkan underline */
+    color: inherit;          /* Gunakan warna teks normal dari card */
+    display: block;          /* Biar bisa membungkus seluruh card */
 }
 
-.project-card-link:hover .project-card {
-    transform: translateY(-5px);
-    transition: 0.3s;
+.project-card-link:visited,
+.project-card-link:active,
+.project-card-link:hover {
+    color: inherit;       
 }
+
 
 
 @keyframes fadeInUp {
@@ -588,4 +590,5 @@ footer {
         font-size: 2rem;
     }
 }
+
 
